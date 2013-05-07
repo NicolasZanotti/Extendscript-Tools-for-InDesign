@@ -1,0 +1,1 @@
+﻿#target InDesign#include "../src/tools.jsx"$.strict = true;Fs.rootDirectory = new File($.fileName).parent;Doc.open("bind.indd");Doc.bind("bind.xml");Doc.exportToPDF("bind.pdf");Doc.close();
