@@ -1,0 +1,1 @@
+﻿#target InDesign#include "../src/tools.jsx"$.strict = true;Fs.rootDirectory = new File($.fileName).parent;Doc.open("new_from_master.indd");for(var i = 1, page, tf;i < 5;i++){    page = Doc.newPageWithMaster("A-Master", i === 1);    tf = Doc.detachItemFromMaster(page, "tf1");    tf.contents = i + " Lorem.";}
